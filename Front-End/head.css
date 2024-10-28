@@ -1,0 +1,42 @@
+.title{
+    display: flex;
+    justify-content: center; /*設置靠中*/
+    align-items: center; /* 垂直置中 */
+    font-weight: bold; /*設置字體粗體*/
+    font-size: 50px; /*設置字體大小*/
+    color: rgb(6, 58, 100) /*設置字體顏色*/
+    } 
+.head_text{
+    
+    margin: 20px auto; /* 水平置中並設置上方和下方的間距 */
+    width: 80%; /* 設置區塊寬度 */
+    max-width: 1200px; /* 最大寬度 */
+    text-align: left; /* 設置文字靠左對齊 */
+    margin-top:50px; /*設置與上分區塊間距*/
+    font-size: 40px; /*設置字體大小*/
+    color: Gainsboro
+    }
+.text{
+    display: flex; /*設置項目水平排列*/
+    margin: 20px auto; /* 水平置中並設置上方和下方的間距 */
+    width: 80%; /* 設置區塊寬度 */
+    max-width: 1200px; /* 最大寬度 */
+    text-align: left; /* 設置文字靠左對齊 */
+    margin-top:30px; /*設置與上分區塊間距*/
+    font-size: 26px; /*設置字體大小*/
+    line-height: 1.75; /* 設置行高為字體大小的 1.5 倍 */
+    color: LightGray
+    }
+.red_text{
+    display: flex; /*設置項目水平排列*/
+    margin: auto; /* 水平置中並設置上方和下方的間距 */
+    width: 80%; /* 設置區塊寬度 */
+    max-width: 1200px; /* 最大寬度 */
+    text-align: left; /* 設置文字靠左對齊 */
+        
+    font-size: 26px; /*設置字體大小*/
+    line-height: 1; /* 設置行高為字體大小的 1.5 倍 */
+    color: rgb(155, 19, 19)
+    }
+
+
