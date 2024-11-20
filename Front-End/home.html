@@ -3,97 +3,185 @@
 <head>
     <meta  charset = utf-8/>
     <title>Wehelp第六屆申請書-許凱程</title>
-    <link rel="stylesheet" type="text/css" href="head.css" />
+    <link rel='stylesheet' type='text/css' href='head.css' />
 </head>
-    <body style="background-color:DimGray">
-        <div class="title">
-            <img src="Wehelp Logo.png";
-            style="width: 85; height: 85px";
+    <body style='background-color:DarkGray'>
+        <div style='border: 5px solid black; position: fixed; top: -10px; left: -10px; padding: 10px; background-color: DarkGray; width:150px; height:9999px'>
+        <button id="top" class='top' onclick='Top()'>⬆ TOP</button>
+            <script>
+                /* 點擊按鈕時平滑滾動回頂部 */
+                function Top() {
+                    window.scrollTo({
+                    top: 0,
+                    behavior: "smooth", /* 設定平滑滾動 */})}
+            </script>
+        
+        <button id="bottom" class='bottom' onclick='bottom()'>⬇ BOTTOM</button>
+
+            <script>
+                /* 點擊按鈕時平滑滾動回頂部 */
+                function bottom() {
+                    window.scrollTo({
+                    top: 9999,
+                    behavior: "smooth", /* 設定平滑滾動 */})}
+            </script>
+        
+        <span id="table_1" class="table" onclick="table_1()" style="top: 180px; left: 30px; ">1.申請動機</span>
+            <script>
+                /* 點擊按鈕時平滑滾動回頂部 */
+                function table_1() {
+                    const head_1 = document.getElementById("head_1")
+                    const head_1_scroll = head_1.getBoundingClientRect().top + window.scrollY
+                    window.scrollTo({
+                    top: head_1_scroll-30,
+                    behavior: "smooth", /* 設定平滑滾動 */})}
+            </script>
+
+        <span id="table_2" class="table" onclick="table_2()" style="top: 230px; left: 30px; ">2.相關學習</span>
+            <script>
+                /* 點擊按鈕時平滑滾動回頂部 */
+                function table_2() {
+                    const head_2 = document.getElementById("head_2")
+                    const head_2_scroll = head_2.getBoundingClientRect().top + window.scrollY
+                    window.scrollTo({
+                    top: head_2_scroll-30,
+                    behavior: "smooth", /* 設定平滑滾動 */})}
+            </script>
+
+        <span id="table_3" class="table" onclick="table_3()" style="top: 280px; left: 30px;">3.時間安排</span>
+        <script>
+            /* 點擊按鈕時平滑滾動回頂部 */
+            function table_3() {
+                const head_3 = document.getElementById("head_3")
+                const head_3_scroll = head_3.getBoundingClientRect().top + window.scrollY
+                window.scrollTo({
+                top: head_3_scroll-30,
+                behavior: "smooth", /* 設定平滑滾動 */})}
+            </script>
+        <span id="table_4" class="table" onclick="table_4()" style="top: 330px; left: 30px;">4.情緒處理</span>
+        <script>
+            /* 點擊按鈕時平滑滾動回頂部 */
+            function table_4() {
+                const head_4 = document.getElementById("head_4")
+                const head_4_scroll = head_4.getBoundingClientRect().top + window.scrollY
+                window.scrollTo({
+                top: head_4_scroll-30,
+                behavior: "smooth", /* 設定平滑滾動 */})}
+        </script>
+        <span id="table_5" class="table" onclick="table_5()" style="top: 380px; left: 30px;">5.開發心得</span>
+        <script>
+            /* 點擊按鈕時平滑滾動回頂部 */
+            function table_5() {
+                const head_5 = document.getElementById("head_5")
+                const head_5_scroll = head_5.getBoundingClientRect().top + window.scrollY
+                window.scrollTo({
+                top: head_5_scroll-30,
+                behavior: "smooth", /* 設定平滑滾動 */})}
+        </script>
+        <span id="table_6" class="table" onclick="table_6()" style="top: 430px; left: 30px;">6.工作看法</span>
+        <script>
+            /* 點擊按鈕時平滑滾動回頂部 */
+            function table_6() {
+                const head_6 = document.getElementById("head_6")
+                const head_6_scroll = head_6.getBoundingClientRect().top + window.scrollY
+                window.scrollTo({
+                top: head_6_scroll-30,
+                behavior: "smooth", /* 設定平滑滾動 */})}
+        </script>
+        </div>
+        <div class='title'>
+            <img src='Wehelp Logo.png';
+            style='width: 85px; height: 85px';
             >WeHelp Bootcamp第六屆申請書</div>
 
-        <div class="head_text">1.個人簡介和申請動機</div>
-            <div class="text">WeHelp貴司好，我叫許凱程今年25歲，目前想轉職到工程崗位並以開發人員為目標。
-            <br>小時候我就對開發人員抱持著憧憬，因自己不愛念書染上網癮，而沒能認真學習工程相關的知識。
-            <br>隨著年齡的增長，考量到自己的職涯發展，我意識到必須鞭策自己，將這份憧憬變為現實。
-            <br>我的長期目標是成為AI核心開發人員，尤其是影像辨識和NLP領域。
-            <br>但經過參考許多建議和網路文章，我了解到，對於沒有相關學歷背景的人來說，前端開發是最合適的切入點。
-            <br>因此，我希望從前後端技術的學習開始，並抓住此次機會參加WeHelp Bootcamp。
-            <br>盼望能在訓練期間培養物件導向能力和問題解決能力，並且完成一些Side Project以及前後端專案，最終與業界順利接軌。
-            <br>在久遠的將來希望成為一名能夠在前後端開發、AI開發領域皆能高就的雙棲工程師。 
+        <div id='head_1'; class='head_text'>1.個人簡介和申請動機</div>
+            <div class='text'>WeHelp貴司好，我叫許凱程，今年25歲。目前想轉職到軟體工程崗位，並以開發人員作為職涯目標。
+            <br>高中時期上計算機概論課時，就覺得程式語言很有趣，直到近幾年AI爆發，逐漸對開發人員抱有憧憬。隨著年齡的增長，考量到自己的職涯發展，我意識到必須鞭策自己，將這份憧憬變為現實。
+            <br>
+            <br>我希望能開發出使人類生活更便利或是讓社會更進步的網站和程式，不僅僅只是做一份工作，而是一件有意義且充滿價值的事。所以我將長期目標設在成為前後端開發以及AI開發人員，尤其是後端、影像辨識和NLP領域。
+            <br>
+            <br>很快的我在YT上找到了彭彭老師的教學影片，也因為此頻道發現了WeHelp Bootcamp。在詳讀過WeHelp Bootcamp的規劃排程後，覺得這種扎實且嚴格的PBL訓練方式很適合我。先前也參考許多建議和網路文章，我了解對於沒有相關學歷背景的人來說，前端開發是最合適的切入點。因此，我希望從前後端技術的學習開始，並抓住這次機會參加 WeHelp Bootcamp。
+            <br>
+            <br>盼望在這26週的學習期間內，除了學習Coding能力以外，還能同步培養物件導向能力和問題解決能力，並且完成Side Project、前後端專案，最終與業界順利接軌。在久遠的將來成為一名於前後端開發、AI開發領域皆能高就的雙棲工程師。 
             </div>
 
-        <div class="head_text">2.曾經做過哪些軟體工程技術相關的學習？</div>
-            <div class="text">不敢說自己做過什麼特別的學習，僅有一些Python基本編程以及為了創建此申請書而學的簡單前端切版能力。以下是Python編程的小作品：</div>
-            <a class="text" ; href="https://striped-soybean-50a.notion.site/d81e66ce3ab64e088d2fd9ac9c465cef">乳癌資料分析</a>
+        <div id='head_2'; class='head_text'>2.曾經做過哪些軟體工程技術相關的學習？</div>
+            <div class='text'>目前僅有為了創建此申請書跟著彭彭老師影片學的前端基礎切版和同時間另外學習的Python基礎。以下是Python編程的小作品：</div>
+            <a class='text' ; target='_blank' ; style='font-size: 30px' ; href='https://striped-soybean-50a.notion.site/d81e66ce3ab64e088d2fd9ac9c465cef'>乳癌資料分析</a>
             
         
-        <div class="head_text">3.如果參與這個訓練，會怎麼安排學習時間？</div>
-            <div class="text">申請的當下還有正職工作，第一階段開始後會評估學習曲線做更準確的規劃。
-            <br>參考第二、第三階段的知識目標/每週大綱，理想會以一週六天/一天8~10小時投入訓練。
-            </div>
-            <div class="red_text">（是否該辭去正職、或是邊打工邊訓練，會審視自己的學習效率並於第一階段初期就做出決定，）
+        <div id='head_3'; class="head_text">3.如果參與這個訓練，會怎麼安排學習時間？</div>
+            <div class="text">參考每個階段的知識目標/每週大綱，會以一週六天/一天8~10小時投入學習。
+            <br>每周一 : 早上9-10 會議準備，下午13-18、晚上20-23 學習。 
+            <br>每週二至六 : 早上9-12、下午14-18、晚上20-23 全學習。
+            <br>每週日 : 視每週任務完成情況選擇學習或休息。</div>
+            <div class="red_text">（目前確定離職，明年全職投入WeHelp Bootcamp。）
 
             </div>
 
-        <div class="head_text">4.請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</div>
+        <div id='head_4'; class="head_text">4.請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</div>
             <div class="text">擔任技術客服崗位時曾遇到主管竄改個人作業內容，導致Issue工單提交給工程部門時不符合SOP。
-            <br>當下情緒100%無奈，向該名主管反映後未得到任何採取此行為的原因。
-            <br>後續主管直接修改SOP並重新佈達，此時的情緒轉變至 50%無奈／50%生氣。
-            <br>一開始情緒的消化上我選擇在假日時與伴侶往外跑，讓正面情緒盡可能蓋過負面情緒，
-            <br>隔週回到工作環境時，負面情緒又浮出水面，我才意識到問題並未被解決，我只是選擇了逃避。
-            <br>於是馬上記錄此次的情況，並用一週的時間觀察新/舊SOP在跨部門協做上帶來的差異。
-            <br>最後在公司例會中提出觀察結果，通過此管道讓該名主管主動展開討論。我的負面情緒也隨之消失。
-            <br>經上述經歷，我認為情緒最有效率的處理方式是"讓產生負面情緒的問題受到正視後被解決"。
+            <br>當下情緒100%無奈，向該名主管反映後未得到任何採取此行為的原因。後續主管直接修改SOP並重新佈達，此時的情緒轉變至 50%無奈／50%生氣。
+            <br>
+            <br>一開始情緒的消化上我選擇在假日時與伴侶往外跑，讓正面情緒盡可能蓋過負面情緒，但隔週回到工作環境時負面情緒又浮出水面，我才意識到問題並未被解決，我只是選擇了逃避。
+            <br>於是我馬上記錄此次的情況，並用一週的時間觀察新/舊SOP在跨部門協作上帶來的差異。最後在公司例會中提出觀察結果，通過此管道讓該名主管主動展開討論。我的負面情緒也隨之消失。
+            <br>
+            <br>經上述經歷，我認為情緒最有效率的處理方式是「讓產生負面情緒的問題受到正視後被解決」。
             <br>但我猜想未來也會有問題解決後負面情緒依舊存在的可能性，就等到那時候再學習、成長吧！
 
             </div>
 
-        <div class="head_text">5.關於這份申請網頁，分享一個開發時的技術心得。</div>
-            <div class="text">像這樣從0~100自己完成一個小作品其實就讓我蠻有成就感的，但也感到遠遠不夠，想叫精進更多技術開發出更厲害的東西。
-            <br>無論是因為code前後順序錯誤導致跑版，亦或是為了達成期望的呈現而學習更多語法， 我都覺得非常有趣。
-            <br>過程中也發現自己其實已經在培養解決問題的能力了。
-            <br>最讓人印象深刻的是
+        <div id='head_5'; class="head_text">5.關於這份申請網頁，分享一個開發時的技術心得。</div>
+            <div class="text">像這樣從0~100自己完成一個簡單的網站申請書小作品就讓我蠻有成就感的，但也感到遠遠不夠，想精進更多技術開發出更厲害的專案。無論是因為code前後順序錯誤導致跑版上網找原因，亦或是為了達成期望的呈現而學習更多語法，我都覺得非常有趣。過程中也發現自己其實已經在培養解決問題的能力了。
+            <br>
+            <br>最讓人印象深刻的是原本看完HTML、CSS的教學後已經完成靜態網頁的申請書準備送出，但隔天開始看Javascript的教學時又學到新的東西，所以馬上就把能互動的事件寫進第6.的內容。邊開發邊學習新的技術，讓我有動力和熱情繼續精進自己！
 
             </div>
 
-        <div class="head_text">6.如何看待自身工作和整個社會群體的連結關係？</div>
-            <div class="text">這題自身工作我不確定是指現任工作還是指前後端開發的工作，故我對兩者的看法都做表達。
-            <br>   
-            <br>A.現職為職涯顧問，主要協助學生、轉職者、專業人士安排他們在專業技能上的補強或是從0~100培養第二專業。接觸到的社會群體很廣，各行各業的專業人士、男女老少皆有。
-            <br>我發現許多學生在畢業後遇到產學落差的問題，更多在校生與社會人士也不確定未來的志向。
-            <br>我的核心價值在於深入了解每位客戶的興趣或專業，與他們討論自身的目標與需求，安排該專業領域的佼佼者授予指導，並制定學習的排程。
-            <br>讓客戶安心接受PBL的教育模式，使他們完成目標得到成就感並朝志向邁進，不再感到迷茫。
-            <br>"創造企業人才需求的同時讓每個人在社會上貢獻價值"，這就是我現職工作與社會群體的連結。
-            <br>__________________________________________________________________________
-            <br>B.前後端開發我認為是現在及未來每個企業的硬需求，被廣泛應用在各個產業之中。
-            <br>在科技網路世代，網站能做到信息傳播、文化互動，社會參與、知識傳遞等等價值極高的事情。
-            <br>我能查詢到 WeHelp Bootcamp 計畫，並且為了參加此計畫，隨著彭彭老師的教學完成這份申請書的前端開發，也都拜網站所賜。
-            <br>"網站是串起數位社會每個人之間的連結的工具，而這樣的工具由前後端工程師開發"，我認為就是前後端工程師與社會群體的連結關係。
-
+        <div id='head_6'; class="head_text">6.如何看待自身工作和整個社會群體的連結關係？</div>
+            <div class="text">這題自身工作我不確定是指現任工作還是指網站開發的工作，故我對兩者的看法都做表達。</div>
+            <div class="text">
+            <button onclick="ChangeToNowJob()"; class="button" >A.現職工作</button>
+            <button onclick="ChangeToFrontEnd()"; class="button">B.網站開發</button>
+            </div>
+            <div class="text"; id="NowJob"; style="display:none">現職為職涯顧問，主要協助學生、轉職者、專業人士安排他們在專業技能上的補強或是從0~100培養第二專業。接觸到的社會群體很廣，各行各業的專業人士、男女老少皆有。
+                <br>
+                <br>我發現許多學生在畢業後遇到產學落差的問題，更多在校生與社會人士也不確定未來的志向（就像曾經的我一樣）。而我的核心價值就在於深入了解每位客戶的興趣或專業，與他們討論自身的目標與需求，安排該專業領域的佼佼者授予指導，並制定學習的排程。
+                <br>
+                <br>讓客戶安心接受學院的教育模式，使他們完成目標得到成就感並朝志向邁進，不再感到迷茫。《創造企業人才需求的同時讓每個人在社會上貢獻價值》，這就是我現職工作與社會群體的連結。
             </div>
 
-        <div class="head_text">7.其他想要對WeHelp說的事情？</div>
-            <div class="text">看過WeHelp的訓練營每階段規劃和DemoDay的錄影檔，我知道貴司安排的計畫是非常完整且充實的。但連大學都沒畢業的我依舊會擔心 :
-            <br>1. 在訓練後完成的專案是否真的符合前後端業界所需要的標準?
-            <br>2. 即便完成了，業界是否會因為我不是CS類或非相關科系畢業而不錄取、錄用?
-            <br>3. 會不會錄取後只能成為公司內部的優化、維護人員，而不是核心開發人員
-            <br>以上問題希望能在參加WeHelp Bootcamp後靠自己得到解答。
-            <br>__________________________________________________________________________
-            <br>最後，非常感謝彭彭老師在YT上發布了這麼多教學影片(近期也加入了會員)，也推出WeHelp這個育才品牌，讓許多想轉職到軟體開發的人士發現了這個機會。
-            <br>雖然不確定會不會錄取，但就沒錄取我也會持續使用彭彭老師的教學影片精進開發的技術能力，盼望未來能達到自己的目標，成為前後端、AI開發人員。
-
-
+            <div class="text"; id="FrontEnd"; style="display:none">網站開發我認為是現在及未來每個企業的硬需求，被廣泛應用在各個產業之中。
+                <br>
+                <br>在科技網路世代，網站能做到信息傳播、文化互動，社會參與、知識傳遞等等價值極高的事情。我能查詢到 WeHelp Bootcamp 計畫，並且為了參加此計畫，隨著彭彭老師的教學完成這份申請書的前端開發，也都拜網站所賜。
+                <br>
+                <br>"網站是串起數位社會每個人之間的連結的工具，而這樣的工具由前後端工程師開發"，我認為就是前後端工程師與社會群體的連結關係。
             </div>
-
+                <script>
+                    function ChangeToNowJob(){
+                        let NowJobDiv=document.querySelector("#NowJob")
+                        let FrontEndDiv=document.querySelector("#FrontEnd")
+                        NowJobDiv.style.display="block"
+                        FrontEndDiv.style.display="none"
+                        }
+                    function ChangeToFrontEnd(){
+                        let NowJobDiv=document.querySelector("#NowJob")
+                        let FrontEndDiv=document.querySelector("#FrontEnd")
+                        NowJobDiv.style.display="none"
+                        FrontEndDiv.style.display="block"
+                        } 
+                </script>
+            </div>
+            
+        <div id='head_7'; class="head_text">7.其他想要對WeHelp說的事情？</div>
+            <div class="text">看過WeHelp Bootcamp階段規劃和DemoDay的錄影檔，我知道WeHelp bootcamp的計畫是非常完整且嚴格的，這讓我非常放心。我也知道錄取後要靠的就是自律還有決心。
+            <br>
+            <br>非常感謝彭彭老師在YT上發佈了這麼多教學影片(近期也加入了會員)，也推出WeHelp這個品牌，讓許多想轉職到軟體開發的人士發現了這個機會。雖然不確定我會不會錄取，但即便沒錄取我也會持續使用彭彭老師的教學影片精進開發的技術能力，盼望未來能達到自己的目標，成為前後端、AI開發人員。
+            </div>
         </div>
+        <hr>
+        <div class="head_text">相關連結</div>
+        <a class='text' ; target='_blank' ; style='font-size: 30px' ; href='https://pda.104.com.tw/profile/share/i8MAATdOTXGzZRjZoUJeeWoZrwGPCVHe'>個人履歷</a>
     </body>
 
 </html>
-
-echo "# KainuReeves.github.io" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/KainuReeves/KainuReeves.github.io.git
-git push -u origin main

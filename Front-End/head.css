@@ -1,42 +1,125 @@
 .title{
     display: flex;
-    justify-content: center; /*設置靠中*/
+    justify-content: center; /* 設置靠中 */
     align-items: center; /* 垂直置中 */
-    font-weight: bold; /*設置字體粗體*/
-    font-size: 50px; /*設置字體大小*/
-    color: rgb(6, 58, 100) /*設置字體顏色*/
+    font-weight: bold; /* 設置字體粗體 */
+    font-size: 50px; /* 設置字體大小 */
+    color: rgb(6, 58, 100) /* 設置字體顏色 */
     } 
+
 .head_text{
-    
     margin: 20px auto; /* 水平置中並設置上方和下方的間距 */
     width: 80%; /* 設置區塊寬度 */
     max-width: 1200px; /* 最大寬度 */
     text-align: left; /* 設置文字靠左對齊 */
-    margin-top:50px; /*設置與上分區塊間距*/
-    font-size: 40px; /*設置字體大小*/
-    color: Gainsboro
+    margin-top:50px; /* 設置與上分區塊間距 */
+    font-size: 40px; /* 設置字體大小 */
+    color: rgb(6, 58, 100)
     }
+
 .text{
-    display: flex; /*設置項目水平排列*/
+    display: flex; /* 設置項目水平排列 */
     margin: 20px auto; /* 水平置中並設置上方和下方的間距 */
     width: 80%; /* 設置區塊寬度 */
     max-width: 1200px; /* 最大寬度 */
     text-align: left; /* 設置文字靠左對齊 */
-    margin-top:30px; /*設置與上分區塊間距*/
-    font-size: 26px; /*設置字體大小*/
+    margin-top:30px; /* 設置與上分區塊間距 */
+    font-size: 26px; /* 設置字體大小 */
     line-height: 1.75; /* 設置行高為字體大小的 1.5 倍 */
-    color: LightGray
+    color: rgb(5, 36, 61)
     }
 .red_text{
-    display: flex; /*設置項目水平排列*/
+    display: flex; /* 設置項目水平排列 */
     margin: auto; /* 水平置中並設置上方和下方的間距 */
     width: 80%; /* 設置區塊寬度 */
     max-width: 1200px; /* 最大寬度 */
     text-align: left; /* 設置文字靠左對齊 */
         
-    font-size: 26px; /*設置字體大小*/
+    font-size: 26px; /* 設置字體大小 */
     line-height: 1; /* 設置行高為字體大小的 1.5 倍 */
     color: rgb(155, 19, 19)
     }
 
+@media screen and (max-width: 1650px) {
+    .title{
+        justify-content: center; /* 設置靠中 */
+        align-items: center; /* 垂直置中 */
+        margin-left: 200px; /* 距離左邊 120px */
+        margin-right: 20px; /* 保留右邊間距 */
+        width: auto; /* 自動調整寬度 */
+        } 
+    .head_text{
+        margin-left: 200px; /* 距離左邊 120px */
+        margin-right: 20px; /* 保留右邊間距 */
+        width: auto; /* 自動調整寬度 */
+        }
+    .text{
+        margin-left: 200px; /* 距離左邊 120px */
+        margin-right: 20px; /* 可選：保留一些右邊間距 */
+        width: auto; /* 自動調整寬度 */
+        }
+    .red_text{
+        margin-left: 200px; /* 距離左邊 120px */
+        margin-right: 20px; /* 可選：保留一些右邊間距 */
+        width: auto; /* 自動調整寬度 */
+        } 
+    }
+@media screen and (max-width: 1040px) {
+    .title{
+        justify-content: center; /* 設置靠中 */
+        align-items: center; /* 垂直置中 */
+        margin-left: 200px; /* 距離左邊 120px */
+        margin-right: 20px; /* 保留右邊間距 */
+        width: auto; /* 自動調整寬度 */
+        font-size: 40px
+        }
+    }
 
+.button{
+    font-size: 20px; /* 設置字體大小 */
+    margin: auto; /* 水平置中並設置上方和下方的間距 */
+    cursor: pointer;
+    }
+.top{
+    position: fixed; /* 固定位置 */
+    top: 100px; /* 距離頂部100px */
+    left: 30px; /* 距離左側30px */
+    background-color: #020841; /* 按鈕背景色 */
+    color: white; /* 按鈕文字顏色 */
+    border: none; /* 移除邊框 */
+    border-radius: 20%; /* 按鈕造型 */
+    padding: 10px 15px; /* 按鈕內邊距 */
+    font-size: 16px; /* 文字大小 */
+    cursor: pointer; /* 手指 */
+    transition: opacity 0.3s ease; /* 動畫過渡 */
+    }
+    /* 按鈕懸停效果 */
+.top:hover{
+    background-color: #0056b3; /* 深色背景 */
+    }
+.table{
+    position: fixed; /* 固定位置 */
+    color: #020841; /* 按鈕文字顏色 */
+    font-size: 22px; /* 文字大小 */
+    cursor: pointer; /* 手指 */
+    transition: opacity 0.3s ease; /* 動畫過渡 */
+    }
+.table:hover{
+    color: white;
+    }
+.bottom{
+    position: fixed; /* 固定位置 */
+    top: 510px; /* 距離頂部500px */
+    left: 25px; /* 距離左側20px */
+    background-color: #020841; /* 按鈕背景色 */
+    color: white; /* 按鈕文字顏色 */
+    border: none; /* 移除邊框 */
+    border-radius: 20%; /* 按鈕造型 */
+    padding: 10px 15px; /* 按鈕內邊距 */
+    font-size: 16px; /* 文字大小 */
+    cursor: pointer; /* 手指 */
+    transition: opacity 0.3s ease; /* 動畫過渡 */
+    }
+.bottom:hover{
+        background-color: #0056b3; /* 深色背景 */
+    }
