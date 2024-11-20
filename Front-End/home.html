@@ -8,85 +8,87 @@
     <body style='background-color:DarkGray'>
         <div style='border: 5px solid black; position: fixed; top: -10px; left: -10px; padding: 10px; background-color: DarkGray; width:150px; height:9999px'>
         <button id="top" class='top' onclick='Top()'>⬆ TOP</button>
-            <script>
-                /* 點擊按鈕時平滑滾動回頂部 */
-                function Top() {
-                    window.scrollTo({
-                    top: 0,
-                    behavior: "smooth", /* 設定平滑滾動 */})}
-            </script>
+        <script>
+                /* 點擊按鈕時網頁滾動到頂部 */
+            function Top() {
+                window.scrollTo({
+                top: 0,
+                behavior: "smooth", /* 設定平滑滾動 */})}
+        </script>
         
         <button id="bottom" class='bottom' onclick='bottom()'>⬇ BOTTOM</button>
 
-            <script>
-                /* 點擊按鈕時平滑滾動回頂部 */
-                function bottom() {
-                    window.scrollTo({
-                    top: 9999,
-                    behavior: "smooth", /* 設定平滑滾動 */})}
-            </script>
+        <script>
+            /* 點擊按鈕時網頁滾動到底部 */
+            function bottom() {
+                window.scrollTo({
+                top: 9999,
+                behavior: "smooth",})}
+        </script>
         
         <span id="table_1" class="table" onclick="table_1()" style="top: 180px; left: 30px; ">1.申請動機</span>
-            <script>
-                /* 點擊按鈕時平滑滾動回頂部 */
-                function table_1() {
-                    const head_1 = document.getElementById("head_1")
-                    const head_1_scroll = head_1.getBoundingClientRect().top + window.scrollY
-                    window.scrollTo({
-                    top: head_1_scroll-30,
-                    behavior: "smooth", /* 設定平滑滾動 */})}
-            </script>
+        <script>
+            /* 點擊按鈕時網頁滾動到指定div區塊 */
+            function table_1() {
+                const head_1 = document.getElementById("head_1")
+                const head_1_scroll = head_1.getBoundingClientRect().top + window.scrollY
+                window.scrollTo({
+                top: head_1_scroll-30,
+                behavior: "smooth"})}
+        </script>
 
         <span id="table_2" class="table" onclick="table_2()" style="top: 230px; left: 30px; ">2.相關學習</span>
-            <script>
-                /* 點擊按鈕時平滑滾動回頂部 */
-                function table_2() {
-                    const head_2 = document.getElementById("head_2")
-                    const head_2_scroll = head_2.getBoundingClientRect().top + window.scrollY
-                    window.scrollTo({
-                    top: head_2_scroll-30,
-                    behavior: "smooth", /* 設定平滑滾動 */})}
-            </script>
+        <script>
+            function table_2() {
+                const head_2 = document.getElementById("head_2")
+                const head_2_scroll = head_2.getBoundingClientRect().top + window.scrollY
+                window.scrollTo({
+                top: head_2_scroll-30,
+                behavior: "smooth"})}
+        </script>
 
         <span id="table_3" class="table" onclick="table_3()" style="top: 280px; left: 30px;">3.時間安排</span>
         <script>
-            /* 點擊按鈕時平滑滾動回頂部 */
+            
             function table_3() {
                 const head_3 = document.getElementById("head_3")
                 const head_3_scroll = head_3.getBoundingClientRect().top + window.scrollY
                 window.scrollTo({
                 top: head_3_scroll-30,
-                behavior: "smooth", /* 設定平滑滾動 */})}
-            </script>
+                behavior: "smooth"})}
+        </script>
+
         <span id="table_4" class="table" onclick="table_4()" style="top: 330px; left: 30px;">4.情緒處理</span>
         <script>
-            /* 點擊按鈕時平滑滾動回頂部 */
+            
             function table_4() {
                 const head_4 = document.getElementById("head_4")
                 const head_4_scroll = head_4.getBoundingClientRect().top + window.scrollY
                 window.scrollTo({
                 top: head_4_scroll-30,
-                behavior: "smooth", /* 設定平滑滾動 */})}
+                behavior: "smooth"})}
         </script>
+
         <span id="table_5" class="table" onclick="table_5()" style="top: 380px; left: 30px;">5.開發心得</span>
         <script>
-            /* 點擊按鈕時平滑滾動回頂部 */
+            
             function table_5() {
                 const head_5 = document.getElementById("head_5")
                 const head_5_scroll = head_5.getBoundingClientRect().top + window.scrollY
                 window.scrollTo({
                 top: head_5_scroll-30,
-                behavior: "smooth", /* 設定平滑滾動 */})}
+                behavior: "smooth"})}
         </script>
+
         <span id="table_6" class="table" onclick="table_6()" style="top: 430px; left: 30px;">6.工作看法</span>
         <script>
-            /* 點擊按鈕時平滑滾動回頂部 */
+            
             function table_6() {
                 const head_6 = document.getElementById("head_6")
                 const head_6_scroll = head_6.getBoundingClientRect().top + window.scrollY
                 window.scrollTo({
                 top: head_6_scroll-30,
-                behavior: "smooth", /* 設定平滑滾動 */})}
+                behavior: "smooth",})}
         </script>
         </div>
         <div class='title'>
@@ -107,16 +109,18 @@
 
         <div id='head_2'; class='head_text'>2.曾經做過哪些軟體工程技術相關的學習？</div>
             <div class='text'>目前僅有為了創建此申請書跟著彭彭老師影片學的前端基礎切版和同時間另外學習的Python基礎。以下是Python編程的小作品：</div>
-            <a class='text' ; target='_blank' ; style='font-size: 30px' ; href='https://striped-soybean-50a.notion.site/d81e66ce3ab64e088d2fd9ac9c465cef'>乳癌資料分析</a>
-            
+            <a class='text' target='_blank' style="font-size: 26px; line-height: 1.75;" href="https://striped-soybean-50a.notion.site/d81e66ce3ab64e088d2fd9ac9c465cef">乳癌資料分析</a>
         
         <div id='head_3'; class="head_text">3.如果參與這個訓練，會怎麼安排學習時間？</div>
             <div class="text">參考每個階段的知識目標/每週大綱，會以一週六天/一天8~10小時投入學習。
-            <br>每周一 : 早上9-10 會議準備，下午13-18、晚上20-23 學習。 
-            <br>每週二至六 : 早上9-12、下午14-18、晚上20-23 全學習。
-            <br>每週日 : 視每週任務完成情況選擇學習或休息。</div>
-            <div class="red_text">（目前確定離職，明年全職投入WeHelp Bootcamp。）
+            <br>每週一 : 早上9-10 準備會議，下午13-18、晚上20-23 學習。
+            <br>每週二至六 : 早上9-12、下午14-18、晚上20-23 學習。
+            <br>每周日 : 視每週任務完成情況選擇學習或休息。
+            
+            </div>
 
+            <div class="red_text">（目前確定離職，明年全職投入WeHelp Bootcamp。）
+            
             </div>
 
         <div id='head_4'; class="head_text">4.請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</div>
@@ -182,6 +186,7 @@
         <hr>
         <div class="head_text">相關連結</div>
         <a class='text' ; target='_blank' ; style='font-size: 30px' ; href='https://pda.104.com.tw/profile/share/i8MAATdOTXGzZRjZoUJeeWoZrwGPCVHe'>個人履歷</a>
+    
     </body>
 
 </html>
