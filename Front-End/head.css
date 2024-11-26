@@ -122,3 +122,16 @@
 .bottom:hover{
         background-color: #0056b3; 
     }
+.learn_link{
+    display: flex; 
+    margin: 20px auto; 
+    width: auto; 
+    max-width: 1200px; 
+    text-align: left;
+    margin-top:30px; 
+    font-size: 26px; 
+    color: rgb(5, 36, 61)
+    }
+.learn_link:hover{
+    color: white;
+    }
