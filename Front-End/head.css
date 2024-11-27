@@ -34,10 +34,22 @@
     width: 80%; 
     max-width: 1200px; 
     text-align: left; 
-        
     font-size: 26px; 
     line-height: 1; 
     color: rgb(155, 19, 19)
+    }
+.learn_link{
+    display: flex;
+    margin: 20px auto; 
+    width: 80%;
+    max-width: 1200px; 
+    text-align: left;
+    margin-top:30px; 
+    font-size: 30px; 
+    color: rgb(5, 36, 61)
+    }
+.learn_link:hover{
+    color: white;
     }
 
 @media screen and (max-width: 1650px) {
@@ -63,6 +75,11 @@
         margin-right: 20px; 
         width: auto; 
         } 
+    .learn_link{
+        margin-left: 200px; 
+        margin-right: 20px; 
+        width: auto; 
+        }
     }
 @media screen and (max-width: 1040px) {
     .title{
@@ -121,17 +138,4 @@
     }
 .bottom:hover{
         background-color: #0056b3; 
-    }
-.learn_link{
-    display: flex; 
-    margin: 20px auto; 
-    width: auto; 
-    max-width: 1200px; 
-    text-align: left;
-    margin-top:30px; 
-    font-size: 26px; 
-    color: rgb(5, 36, 61)
-    }
-.learn_link:hover{
-    color: white;
     }
