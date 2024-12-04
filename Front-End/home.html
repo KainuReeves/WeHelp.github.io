@@ -58,7 +58,7 @@
                 behavior: "smooth"})}
         </script>
 
-        <span id="table_4" class="table" onclick="table_4()" style="top: 330px; left: 30px;">4.情緒處理</span>
+        <span id="table_4" class="table" onclick="table_4()" style="top: 330px; left: 30px;">4.技術確認</span>
         <script>
             
             function table_4() {
@@ -69,7 +69,7 @@
                 behavior: "smooth"})}
         </script>
 
-        <span id="table_5" class="table" onclick="table_5()" style="top: 380px; left: 30px;">5.開發心得</span>
+        <span id="table_5" class="table" onclick="table_5()" style="top: 380px; left: 30px;">5.情緒處理</span>
         <script>
             
             function table_5() {
@@ -80,7 +80,7 @@
                 behavior: "smooth"})}
         </script>
 
-        <span id="table_6" class="table" onclick="table_6()" style="top: 430px; left: 30px;">6.工作看法</span>
+        <span id="table_6" class="table" onclick="table_6()" style="top: 430px; left: 30px;">6.開發心得</span>
         <script>
             
             function table_6() {
@@ -91,7 +91,7 @@
                 behavior: "smooth",})}
         </script>
 
-        <span id="table_7" class="table" onclick="table_7()" style="top: 480px; left: 30px;">7.想說的話</span>
+        <span id="table_7" class="table" onclick="table_7()" style="top: 480px; left: 30px;">7.工作看法</span>
         <script>
             
             function table_7() {
@@ -99,6 +99,17 @@
                 const head_7_scroll = head_7.getBoundingClientRect().top + window.scrollY
                 window.scrollTo({
                 top: head_7_scroll-30,
+                behavior: "smooth",})}
+        </script>
+
+        <span id="table_8" class="table" onclick="table_8()" style="top: 530px; left: 30px;">8.想說的話</span>
+        <script>
+            
+            function table_8() {
+                const head_8 = document.getElementById("head_8")
+                const head_8_scroll = head_8.getBoundingClientRect().top + window.scrollY
+                window.scrollTo({
+                top: head_8_scroll-30,
                 behavior: "smooth",})}
         </script>
         </div>
@@ -129,14 +140,19 @@
             <br>每週一 : 早上9-10 準備會議，下午13-18、晚上20-23 學習。
             <br>每週二至六 : 早上9-12、下午14-18、晚上20-23 學習。
             <br>每周日 : 視每週任務完成情況選擇學習或休息。
-            
             </div>
-
             <div class="red_text">（目前確定離職，明年全職投入WeHelp Bootcamp。）
-            
             </div>
-
-        <div id='head_4'; class="head_text">4.請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</div>
+        
+        <div id='head_4'; class="head_text">4.軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</div>
+            <div class="text">這樣講可能稍微顯得自大，但我一直以來的做法都是偏向「我需要做的只有開始，其他事情會在過程中明白。」
+            <br>
+            <br>我認為開始學習一項新的技術時，不應一味地追求回報。而到底正不正確取決於這件事情能不能讓我產生成就以及自認有成為更好的人。以我自身的例子來說：我高職是讀日文，而畢業後沒有從事日文的工作，也沒讓我覺得學習日文的時間是錯誤的。能在日本自由行，並且跟與當地人對話讓我很有成就感。
+            <br>
+            <br>要是現在學習了python等等語言，但未來後端、AI領域會有比python更好更適當的開發語言，我也不會因此認為學習python是錯誤的。相反地，透過經年累月的邏輯和解決問題的能力，學習新的趨勢或許更快速上手，也能靠當初的學習模式給自己訂下新的目標。假設這個過程中有任何錯誤，我再來持續地修正就好。
+            </div>
+        
+        <div id='head_5'; class="head_text">5.請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</div>
             <div class="text">擔任技術客服崗位時曾遇到主管竄改個人作業內容，導致Issue工單提交給工程部門時不符合SOP。
             <br>當下情緒100%無奈，向該名主管反映後未得到任何採取此行為的原因。後續主管直接修改SOP並重新佈達，此時的情緒轉變至 50%無奈／50%生氣。
             <br>
@@ -145,17 +161,16 @@
             <br>
             <br>經上述經歷，我認為情緒最有效率的處理方式是「讓產生負面情緒的問題受到正視後被解決」。
             <br>但我猜想未來也會有問題解決後負面情緒依舊存在的可能性，就等到那時候再學習、成長吧！
-
             </div>
 
-        <div id='head_5'; class="head_text">5.關於這份申請網頁，分享一個開發時的技術心得。</div>
+        <div id='head_6'; class="head_text">6.關於這份申請網頁，分享一個開發時的技術心得。</div>
             <div class="text">像這樣從0~100自己完成一個簡單的網站申請書小作品就讓我蠻有成就感的，但也感到遠遠不夠，想精進更多技術開發出更厲害的專案。無論是因為code前後順序錯誤導致跑版上網找原因，亦或是為了達成期望的呈現而學習更多語法，我都覺得非常有趣。過程中也發現自己其實已經在培養解決問題的能力了。
             <br>
             <br>最讓人印象深刻的是原本看完HTML、CSS的教學後已經完成靜態網頁的申請書準備送出，但隔天開始看Javascript的教學時又學到新的東西，所以馬上就把能互動的事件寫進第6.的內容。邊開發邊學習新的技術，讓我有動力和熱情繼續精進自己！
 
             </div>
 
-        <div id='head_6'; class="head_text">6.如何看待自身工作和整個社會群體的連結關係？</div>
+        <div id='head_7'; class="head_text">7.如何看待自身工作和整個社會群體的連結關係？</div>
             <div class="text">這題自身工作我不確定是指現任工作還是指網站開發的工作，故我對兩者的看法都做表達。</div>
             <div class="text">
             <button onclick="ChangeToNowJob()"; class="button" >A.現職工作</button>
@@ -190,7 +205,7 @@
                 </script>
             </div>
             
-        <div id='head_7'; class="head_text">7.其他想要對WeHelp說的事情？</div>
+        <div id='head_8'; class="head_text">8.其他想要對WeHelp說的事情？</div>
             <div class="text">看過WeHelp Bootcamp階段規劃和DemoDay的錄影檔，我知道WeHelp bootcamp的計畫是非常完整且嚴格的，這讓我非常放心。我也知道錄取後要靠的就是自律還有決心。
             <br>
             <br>非常感謝彭彭老師在YT上發佈了這麼多教學影片(近期也加入了會員)，也推出WeHelp這個品牌，讓許多想轉職到軟體開發的人士發現了這個機會。雖然不確定我會不會錄取，但即便沒錄取我也會持續使用彭彭老師的教學影片精進開發的技術能力，盼望未來能達到自己的目標，成為前後端、AI開發人員。
